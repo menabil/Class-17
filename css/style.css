@@ -118,20 +118,30 @@ p {
   column-gap: 20px;
 }
 
-.bicon a {
+.round a {
   font-size: 20px;
   color: #bababa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.round {
+  transition: 0.3s;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border: 2px solid #575757;
-  padding-left: 5px;
-  padding-top: 3px;
-  transition: 0.3s;
+  position: relative;
 }
 
-.bicon a:hover {
+.round:hover a {
   color: #fd6f00;
+}
+
+.round:hover {
   border: 2px solid #fd6f00;
 }
 
@@ -253,3 +263,285 @@ p {
   padding-top: 40px;
 }
 /* Service part end */
+
+/* about part start */
+#about {
+  padding-bottom: 150px;
+  background: #121212;
+}
+
+.atext {
+  padding-bottom: 40px;
+}
+
+.atext h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fefefe;
+  padding-bottom: 25px;
+}
+
+.atext p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  margin-bottom: 80px;
+}
+
+.arow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.acontent p {
+  margin-top: 115px;
+  padding-bottom: 40px;
+  color: #959595;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 190%;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.aDbutt {
+  background: #fd6f00;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 2px solid #fd6f00;
+  transition: 0.4s;
+}
+
+.aDbutt:hover {
+  background: transparent;
+  color: #fd6f00;
+}
+
+.afigma {
+  text-align: center;
+}
+
+.afigma h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fd6f00;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.afigma p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #959595;
+}
+
+.aitemrow {
+  display: flex;
+  justify-content: space-between;
+}
+/* about part end */
+
+/* protfollio part start */
+#protfollio {
+  padding-bottom: 150px;
+  background: #121212;
+}
+
+.ptext h3 {
+  margin-bottom: 40px;
+  color: #fefefe;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.pbtn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.pbtn a {
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c6c6c6;
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.pbtn a:hover {
+  color: #fff;
+  background: #fd6f00;
+}
+
+.pcontent {
+  transition: 0.4s;
+}
+
+.pctext {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pctext h5 {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.pcontent:hover {
+  scale: 1.03;
+}
+
+.pcontent:hover .pctext h5 {
+  color: #fd6f00;
+}
+
+.pcontent:hover .pctext p {
+  color: #cc5800;
+}
+
+.pctext p {
+  color: #959595;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.pthobe {
+  padding-top: 30px;
+}
+/* protfollio part end */
+
+/* contact part start */
+#contact {
+  padding-bottom: 150px;
+  background: #121212;
+}
+
+.fhead h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+.fhead p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 15px 24px !important;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  border-radius: 8px;
+  color: #959595;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  height: 50px;
+}
+
+.form-row textarea {
+  flex: 1;
+  resize: none;
+  height: 150px;
+}
+
+.button-row {
+  justify-content: flex-end;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #959595;
+  padding: 10px 40px;
+  border-radius: 8px;
+  color: #959595;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+button:hover {
+  border: 2px solid #fd6f00;
+  background: #fd6f00;
+  color: #fff;
+}
+/* contact part end */
+
+/* footer part start */
+#footer {
+  background: #1e1e1e;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contpart {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.contpart p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #959595;
+}
+
+.copyright {
+  border-top: 2px solid #707070;
+}
+
+.copyright p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #707070;
+  padding-top: 16px;
+}
+
+.fimg {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.mpart {
+  padding-bottom: 50px;
+}
+
+.bacon {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 50px;
+}
+/* footer part end */
